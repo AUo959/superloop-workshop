@@ -9,6 +9,7 @@ from pathlib import Path
 from superloop_e001.model import TRACE_FIELDS
 from superloop_e001.simulator import matrix_manifest, run_matrix, run_simulation
 from superloop_e001.workloads import CONFIGURATIONS, SCENARIOS, SEEDS, build_offers
+from tools.generate_e001_evidence import generate
 
 
 class E001SimulatorTests(unittest.TestCase):
@@ -140,6 +141,22 @@ class E001SimulatorTests(unittest.TestCase):
             and 40 <= event["simulation_tick"] <= 79
         ]
         self.assertTrue(blocked_transfer_waits)
+
+    def test_evidence_generator_repeats_and_records_provenance(self) -> None:
+        from tempfile import TemporaryDirectory
+
+        with TemporaryDirectory() as directory:
+            output = Path(directory) / "evidence"
+            provenance = generate(output, "test-source-commit")
+            self.assertEqual(72, provenance["validation"]["run_count"])
+            self.assertEqual([], provenance["validation"]["determinism_mismatches"])
+            self.assertEqual([], provenance["validation"]["invalid_run_ids"])
+            self.assertEqual(
+                {},
+                provenance["validation"]["workload_equivalence_mismatches"],
+            )
+            self.assertEqual(72, len(list((output / "raw").glob("*.jsonl"))))
+            self.assertEqual(72, len(list((output / "summary").glob("*.json"))))
 
 
 if __name__ == "__main__":
