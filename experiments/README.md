@@ -50,7 +50,7 @@ The local CBF configuration preserved all hard invariants and reduced fault radi
 
 ## E002 — Noncausal Pneumatic Instrumentation
 
-**Status:** [Specified — E1](E002/EXPERIMENT__E002__NONCAUSAL_PNEUMATIC_INSTRUMENTATION__v0.1__2026-07-14.md)
+**Status:** [Implemented — evidence pending](E002/EXPERIMENT__E002__NONCAUSAL_PNEUMATIC_INSTRUMENTATION__v0.1__2026-07-14.md)
 
 **Registry ID:** `SW.EXPERIMENT.E002`
 
@@ -61,6 +61,10 @@ Can pressure, resistance, conductance, candidate flow, occupancy-time, dissipati
 ### Boundary
 
 E002 replays E001 evidence offline and emits a separate exact-rational telemetry stream. The observables cannot authorize work, create credit, change order, repair circular wait, or become causal input.
+
+### Implementation
+
+The dependency-free replayer verifies the frozen archive and embedded digests without importing E001 transition code. It emits pre- and post-tick loop/interlock records, typed diagnostic states, deterministic summaries, and fixed T1–T3 comparisons. The protected canonical runner repeats the complete matrix before packaging any evidence.
 
 ### Exit
 

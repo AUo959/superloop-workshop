@@ -12,7 +12,7 @@ This registry is the identity and status index for foundational Superloop concep
 | `SW.PROTOTYPE.BPE` | Biological Pneumatic Engine | Prototyped / archived input | E2-limited | Recovered PDP v2 prototype; not a Superloop runtime dependency |
 | `SW.BRIDGE.CBF_PNEUMATIC` | CBF–Pneumatic Bridge | Formalized | E1 | Controlled synthesis: CBF constitution plus optional pneumatic dynamics |
 | `SW.EXPERIMENT.E001` | Three-Ring Bounded Flow | Completed | E4-scoped | Repeated 72-run Python 3.13 comparison; result is limited to the declared three-ring model |
-| `SW.EXPERIMENT.E002` | Noncausal Pneumatic Instrumentation | Specified | E1 | Offline Stage B replay of E001 with exact read-only field telemetry |
+| `SW.EXPERIMENT.E002` | Noncausal Pneumatic Instrumentation | Implemented / evidence pending | E2 | Offline Stage B replay of E001 with exact read-only field telemetry |
 
 ## Naming rule
 

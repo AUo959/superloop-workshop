@@ -1,0 +1,57 @@
+name: E002 canonical evidence
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - .github/workflows/e002-canonical-evidence.yml
+      - experiments/E001/results/raw/E001__CANONICAL_EVIDENCE__81e7f859f71425bdba7603a61566f9fb47c116f9.tar.gz
+      - experiments/E002/config/**
+      - src/superloop_e002/**
+      - tools/generate_e002_evidence.py
+
+permissions:
+  contents: read
+
+jobs:
+  evidence:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.13"
+
+      - name: Generate and repeat E002 canonical instrumentation
+        env:
+          PYTHONPATH: src
+        run: >-
+          python tools/generate_e002_evidence.py
+          --output build/e002-canonical
+          --source-commit "$GITHUB_SHA"
+
+      - name: Verify deterministic evidence archive
+        id: package
+        shell: bash
+        run: |
+          archive="build/e002-canonical.tar.gz"
+          (cd build && sha256sum --check e002-canonical.tar.gz.sha256)
+          echo "archive=$archive" >> "$GITHUB_OUTPUT"
+
+      - name: Upload canonical evidence
+        uses: actions/upload-artifact@v4
+        with:
+          name: e002-canonical-${{ github.sha }}
+          path: |
+            ${{ steps.package.outputs.archive }}
+            ${{ steps.package.outputs.archive }}.sha256
+          if-no-files-found: error
+          retention-days: 90
