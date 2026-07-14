@@ -53,10 +53,10 @@ This checklist separates repository operations from architectural and ownership 
 
 ## Current critical path
 
-1. Run the protected E002 evidence workflow from the merged implementation commit.
-2. Verify the artifact digest and repeat results under Python 3.13.
-3. Record the directed H1–H4 result and classify the pneumatic projections.
-4. Decide whether optional shadow mode is warranted by the offline result.
+1. Preserve E002's Narrow result and do not tune the frozen scalar law.
+2. Decide whether a new noncausal vector/topological experiment has a question distinct enough to justify E003.
+3. Freeze any E003 targets and baselines before implementation.
+4. Defer optional shadow mode unless a noncausal projection first demonstrates value.
 5. Preserve any causal Stage C proposal as a separate, newly frozen experiment.
 
 ## E001 Stage A completion
@@ -87,5 +87,7 @@ This checklist separates repository operations from architectural and ownership 
 - [x] Typed capacity, fault, semantic, stale-authority, and reciprocal-debt channels are separate
 - [x] Fixed T1–T3 analysis and exact ROC-AUC calculation are implemented
 - [x] Protected Python 3.13 evidence workflow is defined
-- [ ] Canonical runner artifact verified and promoted
-- [ ] Directed result and outcome classification recorded
+- [x] Canonical Python 3.13 evidence archive verified and promoted
+- [x] Directed result and Narrow outcome classification recorded
+- [x] Scalar projection asymmetry preserved as an emergent observation
+- [x] Causal Stage C progression declined for the tested law

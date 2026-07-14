@@ -50,7 +50,7 @@ The local CBF configuration preserved all hard invariants and reduced fault radi
 
 ## E002 — Noncausal Pneumatic Instrumentation
 
-**Status:** [Implemented — evidence pending](E002/EXPERIMENT__E002__NONCAUSAL_PNEUMATIC_INSTRUMENTATION__v0.1__2026-07-14.md)
+**Status:** [Completed — Narrow / E4-scoped](E002/results/reports/E002__STAGE_B_RESULTS__v0.1__2026-07-14.md)
 
 **Registry ID:** `SW.EXPERIMENT.E002`
 
@@ -68,4 +68,4 @@ The dependency-free replayer verifies the frozen archive and embedded digests wi
 
 ### Exit
 
-Classify the instrumentation as retain, narrow, revise, or reject. No outcome automatically authorizes a causal constitutive layer.
+The exact reconstruction and typed observability layer are retained, but H4 was not supported. Candidate flow was weak for transfer prediction, worse than congestion for denial prediction, and redundant with congestion for stall prediction. The experiment is classified **Narrow** and does not authorize causal Stage C.

@@ -1,0 +1,18 @@
+{
+  "aggregate_digest": "41d35fba334b4f23c773d16f78b6e7fe6939b4d43ca69f7b8827ea897af82898",
+  "experiment": "SW.EXPERIMENT.E002",
+  "invocation": "PYTHONPATH=src python tools/generate_e002_evidence.py --output /tmp/e002-canonical-a9923615 --source-commit a9923615c09a7cd1afc452c16e505d70b98c0568",
+  "runtime": {
+    "implementation": "CPython",
+    "python_version": "3.13.11"
+  },
+  "schema_version": "e002.evidence-provenance.v1",
+  "source_commit": "a9923615c09a7cd1afc452c16e505d70b98c0568",
+  "source_e001_archive_sha256": "584cc15bfeb3cc74dec9d9069cde26e1abaa6f1350c0aa12ae10a9784bd1663b",
+  "validation": {
+    "determinism_mismatches": [],
+    "invalid_run_ids": [],
+    "run_count": 72,
+    "telemetry_record_count": 207360
+  }
+}

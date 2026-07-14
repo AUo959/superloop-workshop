@@ -1,0 +1,52 @@
+{
+  "candidate_flow_positive_records": 0,
+  "committed_flow_total": 128,
+  "hard_invariants": {
+    "I1": "pass",
+    "I10": "pass",
+    "I2": "pass",
+    "I3": "pass",
+    "I4": "pass",
+    "I5": "pass",
+    "I6": "pass",
+    "I7": "pass",
+    "I8": "pass",
+    "I9": "pass"
+  },
+  "phase_distance_distributions": {
+    "2": {
+      "0": 604,
+      "1": 116
+    },
+    "3": {
+      "0": 604,
+      "1": 116
+    },
+    "4": {
+      "0": 604,
+      "1": 116
+    },
+    "6": {
+      "0": 604,
+      "1": 116
+    }
+  },
+  "reconstruction": {
+    "accounting_checks": 912,
+    "active_at_end": 0,
+    "occupancy_time": {
+      "A": 135,
+      "B": 140,
+      "C": 141
+    },
+    "outstanding_obligations_at_end": 0,
+    "status": "pass"
+  },
+  "record_count": 2880,
+  "schema_version": "e002.run-summary.v1",
+  "source_run_id": "global_barrier__burst__seed-29",
+  "source_summary_digest": "04ab3e4c7fc056709f789ae6840830d5b441fcc1c271d96186bc389bd7190c3a",
+  "source_trace_digest": "2675590da91cf1a0d328221239c194c8540ec2472510484be030251a56290159",
+  "telemetry_digest": "b9c7cdae66a537f3f32283f7844f3808876c41ff584e3223b0a0f14c28387665",
+  "zero_vacancy_cycle_ticks": []
+}
