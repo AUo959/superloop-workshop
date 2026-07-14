@@ -4,7 +4,8 @@ Experiments convert Superloop claims into reproducible evidence. Each experiment
 
 ## E001 — Three-Ring Bounded Flow
 
-**Status:** Planned  
+**Status:** [Specified — E1](E001/EXPERIMENT__E001__THREE_RING_BOUNDED_FLOW__v0.1__2026-07-13.md)
+
 **Registry ID:** `SW.EXPERIMENT.E001`
 
 ### Question
@@ -41,5 +42,4 @@ Can three recurrent units coordinate work through local interlocks while maintai
 
 ### Success condition
 
-The CBF configuration remains bounded and live under the declared normal and degraded cases, or produces a clear negative result identifying which architectural assumption failed.
-
+The CBF configuration remains bounded and live under the declared normal and degraded cases, or produces a clear negative result identifying which architectural assumption failed. The standalone specification freezes the comparison contract, run matrix, invariants, and evidence locations.
