@@ -17,3 +17,9 @@ Tests will be organized around architectural properties rather than implementati
 Every implementation test should identify the concept invariant it protects.
 
 E001 tests must map explicitly to the ten hard invariants in the [E001 specification](../experiments/E001/EXPERIMENT__E001__THREE_RING_BOUNDED_FLOW__v0.1__2026-07-13.md).
+
+Run the Stage A suite with:
+
+```bash
+PYTHONPATH=src python -m unittest discover -s tests -p "test_*.py" -v
+```

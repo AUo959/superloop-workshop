@@ -1,0 +1,35 @@
+{
+  "configurations": [
+    "central",
+    "global_barrier",
+    "local_cbf"
+  ],
+  "parameters": {
+    "capacity_per_loop": 8,
+    "credit_lease_ticks": 3,
+    "injection_end_tick": 119,
+    "interlock_transfer_limit": 1,
+    "maximum_drain_horizon": 360,
+    "normal_service_period": 1,
+    "primary_horizon": 240,
+    "work_deadline_ticks": 60
+  },
+  "scenarios": [
+    "balanced",
+    "burst",
+    "saturated_receiver",
+    "slow_neighbor",
+    "failed_neighbor",
+    "circular_wait",
+    "stale_feedback",
+    "malformed_duplicate"
+  ],
+  "schema_version": "e001.matrix.v1",
+  "seeds": [
+    17,
+    29,
+    43
+  ],
+  "specification": "EXPERIMENT__E001__THREE_RING_BOUNDED_FLOW__v0.1__2026-07-13.md"
+}
+
