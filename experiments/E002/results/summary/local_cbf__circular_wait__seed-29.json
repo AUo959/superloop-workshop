@@ -1,0 +1,109 @@
+{
+  "candidate_flow_positive_records": 0,
+  "committed_flow_total": 0,
+  "hard_invariants": {
+    "I1": "pass",
+    "I10": "pass",
+    "I2": "pass",
+    "I3": "pass",
+    "I4": "pass",
+    "I5": "pass",
+    "I6": "pass",
+    "I7": "pass",
+    "I8": "pass",
+    "I9": "pass"
+  },
+  "phase_distance_distributions": {
+    "2": {
+      "0": 720
+    },
+    "3": {
+      "0": 720
+    },
+    "4": {
+      "0": 720
+    },
+    "6": {
+      "0": 720
+    }
+  },
+  "reconstruction": {
+    "accounting_checks": 144,
+    "active_at_end": 0,
+    "occupancy_time": {
+      "A": 480,
+      "B": 480,
+      "C": 480
+    },
+    "outstanding_obligations_at_end": 0,
+    "status": "pass"
+  },
+  "record_count": 2880,
+  "schema_version": "e002.run-summary.v1",
+  "source_run_id": "local_cbf__circular_wait__seed-29",
+  "source_summary_digest": "b21114a56de522b19cca0e9fe14a6609bcc9999f404123c96ffdd1d0f9a6d76e",
+  "source_trace_digest": "43faf65d6891d73e54775242cb502dc0538c5072ef463bce84ebd774868a4356",
+  "telemetry_digest": "2c7451379d6532bc789cba683373ffad551f2a36075b762218d7b755c663edf8",
+  "zero_vacancy_cycle_ticks": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59
+  ]
+}
