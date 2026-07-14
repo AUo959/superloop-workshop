@@ -1,0 +1,25 @@
+{
+  "configuration": {
+    "path": "experiments/E001/config/CANONICAL_MATRIX__E001__v0.1__2026-07-13.json",
+    "sha256": "c95b449048b620d2a6a866ff43db675b085951086710828fe03391f268012d11"
+  },
+  "experiment": "SW.EXPERIMENT.E001",
+  "invocation": "PYTHONPATH=src python tools/generate_e001_evidence.py --output build/e001-canonical --source-commit 81e7f859f71425bdba7603a61566f9fb47c116f9",
+  "matrix_manifest_digest": "4ae44e0f3e0029f9f124b2f30ee28f5d83e476cd5135f1f5233930424ac3fe42",
+  "runtime": {
+    "implementation": "CPython",
+    "python_version": "3.13.14"
+  },
+  "schema_version": "e001.evidence-provenance.v1",
+  "source_commit": "81e7f859f71425bdba7603a61566f9fb47c116f9",
+  "specification": {
+    "path": "experiments/E001/EXPERIMENT__E001__THREE_RING_BOUNDED_FLOW__v0.1__2026-07-13.md",
+    "sha256": "b3552734244244699114dee7710b030c9ec584262c13bef97961008b375faa60"
+  },
+  "validation": {
+    "determinism_mismatches": [],
+    "invalid_run_ids": [],
+    "run_count": 72,
+    "workload_equivalence_mismatches": {}
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "active_at_end": 0,
+  "admitted": 48,
+  "completed": 48,
+  "configuration": "global_barrier",
+  "coordination_event_total": 245,
+  "coordination_events": {
+    "receipt": 96,
+    "validate": 96,
+    "wait": 53
+  },
+  "duplicate_promotion_count": 0,
+  "elapsed_simulation_ticks": 240,
+  "fault_radius": 0,
+  "final_unresolved_obligations": 0,
+  "healthy_progress_ticks": 0,
+  "invariant_violation_count": 0,
+  "invariant_violations": [],
+  "latency": {
+    "maximum": 34,
+    "p50": 3,
+    "p95": 30
+  },
+  "maximum_occupancy": {
+    "A": 7,
+    "B": 4,
+    "C": 2
+  },
+  "maximum_unresolved_obligations": 1,
+  "maximum_wait": 20,
+  "mean_occupancy": {
+    "A": 0.85,
+    "B": 0.433333,
+    "C": 0.2625
+  },
+  "occupancy_time": {
+    "A": 204,
+    "B": 104,
+    "C": 63
+  },
+  "offered": 48,
+  "provenance_completeness_percent": 100.0,
+  "recovery_time": null,
+  "run_id": "global_barrier__saturated_receiver__seed-29",
+  "scenario": "saturated_receiver",
+  "schema_version": "e001.summary.v1",
+  "seed": 29,
+  "stale_authorization_count": 0,
+  "stale_rejection_count": 0,
+  "summary_digest": "5483315c7c438086e3493aea4122e0c70397f40995773f8703104495e2f35584",
+  "terminal_counts": {
+    "completed": 48
+  },
+  "throughput_per_tick": 0.2,
+  "trace_digest": "cab05ee91a831ee0076781bfbaf610c29676ad047b32b7dd65db3bcbf7fdd0c6",
+  "workload_digest": "18f3045e37826fc743bce5e5cb359a7620d23c8864a2493b75c83721331920a7"
+}
