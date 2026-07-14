@@ -10,7 +10,7 @@ This checklist separates repository operations from architectural and ownership 
 - [x] Minimal interlock contract drafted
 - [x] CBF–pneumatic bridge formalized at E1
 - [x] Bounded-emergence operating note drafted
-- [ ] Foundation and bridge pull requests reviewed and merged to `main`
+- [x] Foundation and bridge pull requests reviewed and merged to `main`
 
 ## Contribution and evidence workflow
 
@@ -25,13 +25,13 @@ This checklist separates repository operations from architectural and ownership 
 
 ## Owner decisions before public collaboration
 
-- [ ] Select a license or deliberately retain default copyright
-- [ ] Decide whether external contributions are accepted before the first proof of concept
-- [ ] Select allowed merge methods and history policy
+- [x] Deliberately retain default copyright during the initial proof of concept
+- [x] Keep implementation contributions maintainer-led through E001
+- [x] Use squash merges for focused project history
 - [ ] Enable automatic deletion of merged branches if desired
 - [ ] Enable private vulnerability reporting
 - [ ] Add repository description and topics
-- [ ] Decide whether GitHub Discussions should be enabled for exploratory conversation
+- [x] Defer GitHub Discussions until the first proof of concept is reproducible
 
 ## Recommended `main` protection after the first CI run
 
@@ -53,9 +53,8 @@ This checklist separates repository operations from architectural and ownership 
 
 ## Current critical path
 
-1. Review and merge the foundation pull request.
-2. Retarget and merge the bridge pull request onto `main`.
-3. Merge repository-readiness scaffolding.
-4. Record the licensing and contribution-policy decisions.
-5. Formalize E001 and choose the minimal simulator stack through an ADR.
-
+1. Protect `main` using pull-request, conversation-resolution, and `Repository integrity` requirements.
+2. Add the repository description and topics.
+3. Formalize E001 as a standalone experiment specification.
+4. Choose the minimal simulator stack through an ADR.
+5. Implement the discrete three-ring observation chamber.
