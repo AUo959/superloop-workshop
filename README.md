@@ -43,8 +43,10 @@ Experience from Aurora may inform research discipline, provenance, modularity, e
 - [The Biological Pneumatic Engine v0.1](docs/whitepapers/PNEUMATIC_COMPUTATION__WHITEPAPER__BIOLOGICAL_PNEUMATIC_ENGINE__v0.1__2026-07-10.md)
 - [CBF–Pneumatic Computation Bridge v0.1](docs/bridges/COMPUTATIONAL_ARCHITECTURE__BRIDGE__CBF_AND_PNEUMATIC_COMPUTATION__v0.1__2026-07-13.md)
 - [Minimal Interlock Contract v0.1](specs/CBF__SPEC__MINIMAL_INTERLOCK_CONTRACT__v0.1__2026-07-10.md)
+- [Bounded Emergence operating note](docs/research/BOUNDED_EMERGENCE__OPERATING_NOTE__v0.1__2026-07-13.md)
 - [Concept Registry](registry/CONCEPT_REGISTRY.md)
 - [Research Roadmap](ROADMAP.md)
+- [Repository Readiness](REPOSITORY_READINESS.md)
 
 ## Immediate objective
 
