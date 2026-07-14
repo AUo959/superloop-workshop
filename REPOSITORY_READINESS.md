@@ -53,8 +53,17 @@ This checklist separates repository operations from architectural and ownership 
 
 ## Current critical path
 
-1. Implement the discrete three-ring observation chamber.
-2. Map tests to the ten E001 hard invariants.
-3. Run and preserve the 72-run canonical matrix.
-4. Analyze directed evidence and emergent observations separately.
-5. Decide whether to proceed to noncausal pneumatic instrumentation.
+1. Review and preserve the E001 Stage A result as scoped E4 evidence.
+2. Freeze a Stage B specification for noncausal pneumatic observables.
+3. Retain Stage A configurations as controls during Stage B.
+4. Test the zero-vacancy circulation boundary in a separate experiment or E001 v0.2.
+5. Keep any causal exchange or escrow mechanism outside E001 v0.1.
+
+## E001 Stage A completion
+
+- [x] Discrete three-ring observation chamber implemented
+- [x] Tests mapped to the E001 invariant families
+- [x] Canonical 72-run matrix repeated under Python 3.13
+- [x] Raw evidence, summaries, provenance, and checksum preserved
+- [x] Directed results and emergent observations separated
+- [x] Exit decision recorded: proceed with noncausal Stage B instrumentation

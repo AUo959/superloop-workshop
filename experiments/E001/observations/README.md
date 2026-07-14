@@ -13,5 +13,6 @@ Each observation should identify:
 
 Observations begin as Seed / E0 claims. They do not change E001 metrics, success conditions, or architecture retroactively.
 
-No emergent observations have been recorded yet.
+## Recorded observations
 
+- [O001 — Full-Ring Circulation Asymmetry](E001__OBSERVATION__FULL_RING_CIRCULATION_ASYMMETRY__v0.1__2026-07-14.md) — Seed / E0
