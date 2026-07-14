@@ -28,3 +28,6 @@ Copy [the ADR template](ADR_TEMPLATE.md), fill every section, and link supersedi
 - **Superseded** — replaced by a named later decision.
 - **Rejected** — considered but deliberately not adopted.
 
+## Current decisions
+
+- [ADR 0001 — Python standard library for E001](ADR__0001__PYTHON_STANDARD_LIBRARY_FOR_E001__2026-07-13.md) — **Trial**

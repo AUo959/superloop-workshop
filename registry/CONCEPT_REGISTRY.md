@@ -11,7 +11,7 @@ This registry is the identity and status index for foundational Superloop concep
 | `SW.CONCEPT.PNEUMATIC_COMPUTATION` | Pneumatic Computation | Formalized | E1 | Computation through pressure-differential mechanisms |
 | `SW.PROTOTYPE.BPE` | Biological Pneumatic Engine | Prototyped / archived input | E2-limited | Recovered PDP v2 prototype; not a Superloop runtime dependency |
 | `SW.BRIDGE.CBF_PNEUMATIC` | CBF–Pneumatic Bridge | Formalized | E1 | Controlled synthesis: CBF constitution plus optional pneumatic dynamics |
-| `SW.EXPERIMENT.E001` | Three-Ring Bounded Flow | Planned | E0 | First comparative simulation |
+| `SW.EXPERIMENT.E001` | Three-Ring Bounded Flow | Specified | E1 | Frozen 72-run comparative simulation; implementation pending |
 
 ## Naming rule
 
