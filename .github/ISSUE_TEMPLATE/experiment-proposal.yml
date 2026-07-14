@@ -1,0 +1,77 @@
+name: Experiment proposal
+description: Define a falsifiable Superloop experiment before implementation.
+title: "[Experiment]: "
+labels:
+  - experiment
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Experiments should be small enough to reproduce and explicit enough to fail meaningfully.
+  - type: input
+    id: identifier
+    attributes:
+      label: Proposed identifier
+      description: Use the next available registry-style identifier when known.
+      placeholder: SW.EXPERIMENT.E###
+    validations:
+      required: true
+  - type: textarea
+    id: question
+    attributes:
+      label: Research question
+      description: State one primary question.
+    validations:
+      required: true
+  - type: textarea
+    id: hypothesis
+    attributes:
+      label: Hypothesis and falsifier
+      description: State the expected result and the observation that would falsify it.
+    validations:
+      required: true
+  - type: textarea
+    id: configurations
+    attributes:
+      label: Configurations and baselines
+      description: Identify the intervention and the simpler alternatives used for comparison.
+    validations:
+      required: true
+  - type: textarea
+    id: scenarios
+    attributes:
+      label: Scenarios and disturbances
+      description: Include normal, overload, fault, stale-state, and adversarial cases as applicable.
+    validations:
+      required: true
+  - type: textarea
+    id: metrics
+    attributes:
+      label: Metrics and traces
+      description: Define measurements, units, seeds, trace fields, and equivalent-work controls.
+    validations:
+      required: true
+  - type: textarea
+    id: invariants
+    attributes:
+      label: Invariants and risks
+      description: Identify hard invariants and new failure modes.
+    validations:
+      required: true
+  - type: textarea
+    id: emergence
+    attributes:
+      label: Emergence observation plan
+      description: What unanticipated behavior will be recorded without being confused with the primary result?
+    validations:
+      required: true
+  - type: checkboxes
+    id: discipline
+    attributes:
+      label: Research discipline
+      options:
+        - label: I will preserve negative results and parameter settings.
+          required: true
+        - label: I will distinguish simulated time from wall-clock performance.
+          required: true
+

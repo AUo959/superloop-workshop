@@ -1,0 +1,38 @@
+name: Defect report
+description: Report incorrect, irreproducible, unsafe, or provenance-incomplete behavior.
+title: "[Defect]: "
+labels:
+  - defect
+body:
+  - type: textarea
+    id: summary
+    attributes:
+      label: Defect summary
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction
+      description: Include commit, environment, command, configuration, seed, and minimal input.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected and observed behavior
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence
+      description: Link traces, logs, failing tests, or affected artifacts. Remove secrets and private data.
+    validations:
+      required: true
+  - type: textarea
+    id: invariants
+    attributes:
+      label: Invariants or claims affected
+      description: Identify any capacity, liveness, provenance, authorization, or evidence-status impact.
+

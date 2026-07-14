@@ -1,0 +1,45 @@
+# Operating-system files
+.DS_Store
+Thumbs.db
+
+# Editors and local workspaces
+.idea/
+.vscode/
+*.code-workspace
+*.swp
+*~
+
+# Local configuration and secrets
+.env
+.env.*
+!.env.example
+
+# Python tooling
+__pycache__/
+*.py[cod]
+.coverage
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
+.venv/
+venv/
+
+# JavaScript tooling
+node_modules/
+.npm/
+.pnpm-store/
+
+# Build and packaging output
+build/
+dist/
+*.egg-info/
+
+# Logs and temporary files
+*.log
+*.tmp
+.cache/
+
+# Experiment traces and results are intentionally not ignored.
+# Reproducible evidence belongs in the repository unless it contains secrets
+# or exceeds GitHub's practical file limits.
+

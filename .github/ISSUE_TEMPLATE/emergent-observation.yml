@@ -1,0 +1,53 @@
+name: Emergent observation
+description: Record unexpected field behavior without prematurely promoting it.
+title: "[Observation]: "
+labels:
+  - observation
+body:
+  - type: textarea
+    id: observation
+    attributes:
+      label: What was observed?
+      description: Describe the behavior before interpreting it.
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Experimental context
+      description: Provide commit, configuration, scenario, seed, and trace or result paths.
+    validations:
+      required: true
+  - type: dropdown
+    id: repeatability
+    attributes:
+      label: Repeatability
+      options:
+        - Not yet repeated
+        - Repeated with the same configuration
+        - Repeated across multiple configurations
+        - Failed to repeat
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternative explanations
+      description: Include instrumentation artifacts, numerical effects, parameter sensitivity, and ordinary implementation defects.
+    validations:
+      required: true
+  - type: textarea
+    id: next_test
+    attributes:
+      label: Smallest discriminating test
+      description: What minimal follow-up could separate the leading explanations?
+    validations:
+      required: true
+  - type: checkboxes
+    id: status
+    attributes:
+      label: Status boundary
+      options:
+        - label: I understand this observation remains a Seed / E0 claim until independently formalized and tested.
+          required: true
+
