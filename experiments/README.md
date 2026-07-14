@@ -47,3 +47,21 @@ The CBF configuration remains bounded and live under the declared normal and deg
 ### Result
 
 The local CBF configuration preserved all hard invariants and reduced fault radius relative to the global barrier under failed-neighbor S5. It incurred higher coordination cost and exposed an exactly-full-ring liveness boundary. The Stage A report recommends proceeding to noncausal pneumatic instrumentation while preserving that limitation.
+
+## E002 — Noncausal Pneumatic Instrumentation
+
+**Status:** [Specified — E1](E002/EXPERIMENT__E002__NONCAUSAL_PNEUMATIC_INSTRUMENTATION__v0.1__2026-07-14.md)
+
+**Registry ID:** `SW.EXPERIMENT.E002`
+
+### Question
+
+Can pressure, resistance, conductance, candidate flow, occupancy-time, dissipation, and event phase become coherent and useful observables of the frozen E001 field without changing any transition?
+
+### Boundary
+
+E002 replays E001 evidence offline and emits a separate exact-rational telemetry stream. The observables cannot authorize work, create credit, change order, repair circular wait, or become causal input.
+
+### Exit
+
+Classify the instrumentation as retain, narrow, revise, or reject. No outcome automatically authorizes a causal constitutive layer.

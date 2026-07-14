@@ -1,0 +1,81 @@
+{
+  "analysis": {
+    "auc": {
+      "minimum_pneumatic_auc": {
+        "denominator": 10,
+        "numerator": 7
+      },
+      "minimum_scenario_count": 6,
+      "minimum_scalar_baseline_lift": {
+        "denominator": 20,
+        "numerator": 1
+      },
+      "tie_policy": "average_rank"
+    },
+    "targets": [
+      "wait_or_credit_denial_same_tick",
+      "transfer_commit_same_tick",
+      "healthy_loop_stall_within_five_ticks"
+    ]
+  },
+  "canonical_numeric_representation": {
+    "floating_point_allowed": false,
+    "infinity_allowed": false,
+    "rational_fields": [
+      "numerator",
+      "denominator"
+    ],
+    "zero": {
+      "denominator": 1,
+      "numerator": 0
+    }
+  },
+  "experiment": "SW.EXPERIMENT.E002",
+  "instrumentation": {
+    "candidate_flow": "proposal_eligibility * receiver_conductance * positive_gradient",
+    "congestion_potential": "occupancy / capacity",
+    "dissipation_proxy": "candidate_flow * positive_gradient",
+    "permeability": {
+      "denominator": 1,
+      "numerator": 1
+    },
+    "phase_periods": [
+      2,
+      3,
+      4,
+      6
+    ],
+    "primary_phase_period": 3,
+    "receiver_conductance": "receiver_vacancy / receiver_capacity",
+    "receiver_resistance": "receiver_capacity / receiver_vacancy",
+    "sampling_phases": [
+      "pre_tick",
+      "post_tick"
+    ],
+    "time_step": 1
+  },
+  "prohibited_effects": [
+    "authorization",
+    "capacity_credit_mutation",
+    "queue_reordering",
+    "service_reordering",
+    "transfer_reordering",
+    "terminal_state_mutation",
+    "cyclic_exchange_authority",
+    "stage_a_trace_mutation"
+  ],
+  "schema_version": "e002.instrumentation-contract.v1",
+  "source_evidence": {
+    "archive_sha256": "584cc15bfeb3cc74dec9d9069cde26e1abaa6f1350c0aa12ae10a9784bd1663b",
+    "configurations": 3,
+    "experiment": "SW.EXPERIMENT.E001",
+    "runs": 72,
+    "scenarios": 8,
+    "seeds": [
+      17,
+      29,
+      43
+    ],
+    "source_commit": "81e7f859f71425bdba7603a61566f9fb47c116f9"
+  }
+}
