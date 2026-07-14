@@ -2,6 +2,12 @@
 
 Superloop Workshop welcomes rigorous speculation, formalization, simulation, critique, and falsification.
 
+## Current contribution posture
+
+Development is maintainer-led through the completion and review of E001. External observations, experiment proposals, defect reports, and critique are welcome through the issue forms. Implementation pull requests should begin with a reviewed issue and explicit maintainer agreement on scope.
+
+This posture will be reconsidered after the first proof of concept is reproducible. It is a sequencing decision, not a permanent restriction on collaboration.
+
 ## Before proposing a change
 
 Identify:
@@ -49,4 +55,3 @@ Do not import Aurora modules, names, or canon implicitly. If prior work informs 
 - Keep generated output and raw evidence separate from source code.
 - Do not rewrite negative results; supersede interpretations with traceable follow-up work.
 - Do not include credentials, private datasets, or external canonical artifacts.
-
