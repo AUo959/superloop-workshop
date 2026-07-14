@@ -1,0 +1,59 @@
+name: E001 canonical evidence
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - .github/workflows/e001-canonical-evidence.yml
+      - experiments/E001/config/**
+      - src/superloop_e001/**
+      - tools/generate_e001_evidence.py
+
+permissions:
+  contents: read
+
+jobs:
+  evidence:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.13"
+
+      - name: Generate and repeat the canonical matrix
+        env:
+          PYTHONPATH: src
+        run: >-
+          python tools/generate_e001_evidence.py
+          --output build/e001-canonical
+          --source-commit "$GITHUB_SHA"
+
+      - name: Package deterministic evidence archive
+        id: package
+        shell: bash
+        run: |
+          archive="E001__CANONICAL_EVIDENCE__${GITHUB_SHA}.tar.gz"
+          tar --sort=name --mtime='UTC 1970-01-01' --owner=0 --group=0 --numeric-owner \
+            -C build/e001-canonical -cf - . | gzip -n > "$archive"
+          sha256sum "$archive" > "$archive.sha256"
+          sha256sum --check "$archive.sha256"
+          echo "archive=$archive" >> "$GITHUB_OUTPUT"
+
+      - name: Upload canonical evidence
+        uses: actions/upload-artifact@v4
+        with:
+          name: e001-canonical-${{ github.sha }}
+          path: |
+            ${{ steps.package.outputs.archive }}
+            ${{ steps.package.outputs.archive }}.sha256
+          if-no-files-found: error
+          retention-days: 90
