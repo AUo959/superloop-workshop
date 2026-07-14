@@ -10,7 +10,7 @@ This registry is the identity and status index for foundational Superloop concep
 | `SW.CONCEPT.FIELD_THERMODYNAMICS` | Field Thermodynamics | Seed | E0 | Pressure, flow, resistance, capacity, and equilibrium operating model |
 | `SW.CONCEPT.PNEUMATIC_COMPUTATION` | Pneumatic Computation | Formalized | E1 | Computation through pressure-differential mechanisms |
 | `SW.PROTOTYPE.BPE` | Biological Pneumatic Engine | Prototyped / archived input | E2-limited | Recovered PDP v2 prototype; not a Superloop runtime dependency |
-| `SW.BRIDGE.CBF_PNEUMATIC` | CBF–Pneumatic Bridge | Reserved | E0 | Future controlled synthesis document |
+| `SW.BRIDGE.CBF_PNEUMATIC` | CBF–Pneumatic Bridge | Formalized | E1 | Controlled synthesis: CBF constitution plus optional pneumatic dynamics |
 | `SW.EXPERIMENT.E001` | Three-Ring Bounded Flow | Planned | E0 | First comparative simulation |
 
 ## Naming rule
@@ -20,4 +20,3 @@ This registry is the identity and status index for foundational Superloop concep
 ## Provenance rule
 
 Artifacts may preserve prior workspace labels for historical accuracy. Those labels do not transfer external authority into this registry.
-
