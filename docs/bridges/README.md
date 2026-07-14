@@ -2,11 +2,11 @@
 
 This lane is reserved for explicit connections among research lines that must remain independently traceable.
 
-## First planned bridge
+## Foundational bridge
 
-`COMPUTATIONAL_ARCHITECTURE__BRIDGE__CBF_AND_PNEUMATIC_COMPUTATION__v0.1__YYYY-MM-DD.md`
+[CBF–Pneumatic Computation Bridge v0.1](COMPUTATIONAL_ARCHITECTURE__BRIDGE__CBF_AND_PNEUMATIC_COMPUTATION__v0.1__2026-07-13.md)
 
-The first bridge will compare:
+The bridge compares:
 
 - field pressure and pneumatic pressure;
 - interlocks and valves;
@@ -29,4 +29,3 @@ The bridge must identify:
 6. falsifiable combined hypotheses.
 
 Neither source concept may be retroactively rewritten to make the bridge appear inevitable.
-
