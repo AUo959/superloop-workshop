@@ -29,3 +29,17 @@ PYTHONPATH=src python -m superloop_e001 matrix --output /tmp/e001-results
 ```
 
 The matrix command writes generated evidence only to an explicit output directory. Canonical repository evidence should be promoted separately after review of the source commit and complete manifest.
+
+## E002 Stage B
+
+The representation-only replayer lives in `src/superloop_e002/`. It reads the preserved E001 evidence archive, verifies every source digest, reconstructs state at tick boundaries, and emits separate exact-rational telemetry. It does not import the E001 simulator or workloads.
+
+Generate and repeat the complete E002 evidence set with:
+
+```bash
+PYTHONPATH=src python tools/generate_e002_evidence.py \
+  --output /tmp/e002-canonical \
+  --source-commit "$(git rev-parse HEAD)"
+```
+
+The command writes 72 telemetry streams, 72 run summaries, aggregate analysis, provenance, and a deterministic compressed archive. Generated files never modify the frozen E001 evidence.

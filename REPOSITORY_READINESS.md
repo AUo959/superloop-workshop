@@ -53,11 +53,11 @@ This checklist separates repository operations from architectural and ownership 
 
 ## Current critical path
 
-1. Implement the E002 offline trace replayer without simulator imports.
-2. Verify exact state reconstruction and byte-identical telemetry repetition.
-3. Add optional shadow mode and prove Stage A trace noninterference.
-4. Replay all 72 E001 runs and evaluate the frozen diagnostic thresholds.
-5. Classify each pneumatic projection as retain, narrow, revise, or reject.
+1. Run the protected E002 evidence workflow from the merged implementation commit.
+2. Verify the artifact digest and repeat results under Python 3.13.
+3. Record the directed H1–H4 result and classify the pneumatic projections.
+4. Decide whether optional shadow mode is warranted by the offline result.
+5. Preserve any causal Stage C proposal as a separate, newly frozen experiment.
 
 ## E001 Stage A completion
 
@@ -77,3 +77,15 @@ This checklist separates repository operations from architectural and ownership 
 - [x] Pneumatic variables are prohibited from changing Stage A transitions
 - [x] Fixed diagnostic baselines and thresholds are declared before implementation
 - [x] Retain, narrow, revise, and reject outcomes are defined
+
+## E002 Stage B implementation
+
+- [x] Offline archive reader verifies the frozen E001 archive and embedded digests
+- [x] Replayer has no E001 simulator or workload imports
+- [x] Tick-boundary state reconstruction covers all 72 source runs
+- [x] Exact-rational loop and interlock telemetry is deterministic
+- [x] Typed capacity, fault, semantic, stale-authority, and reciprocal-debt channels are separate
+- [x] Fixed T1–T3 analysis and exact ROC-AUC calculation are implemented
+- [x] Protected Python 3.13 evidence workflow is defined
+- [ ] Canonical runner artifact verified and promoted
+- [ ] Directed result and outcome classification recorded
