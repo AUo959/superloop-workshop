@@ -53,11 +53,11 @@ This checklist separates repository operations from architectural and ownership 
 
 ## Current critical path
 
-1. Review and preserve the E001 Stage A result as scoped E4 evidence.
-2. Freeze a Stage B specification for noncausal pneumatic observables.
-3. Retain Stage A configurations as controls during Stage B.
-4. Test the zero-vacancy circulation boundary in a separate experiment or E001 v0.2.
-5. Keep any causal exchange or escrow mechanism outside E001 v0.1.
+1. Implement the E002 offline trace replayer without simulator imports.
+2. Verify exact state reconstruction and byte-identical telemetry repetition.
+3. Add optional shadow mode and prove Stage A trace noninterference.
+4. Replay all 72 E001 runs and evaluate the frozen diagnostic thresholds.
+5. Classify each pneumatic projection as retain, narrow, revise, or reject.
 
 ## E001 Stage A completion
 
@@ -67,3 +67,13 @@ This checklist separates repository operations from architectural and ownership 
 - [x] Raw evidence, summaries, provenance, and checksum preserved
 - [x] Directed results and emergent observations separated
 - [x] Exit decision recorded: proceed with noncausal Stage B instrumentation
+
+## E002 Stage B entrance criteria
+
+- [x] E002 has a standalone experiment specification
+- [x] Source E001 evidence and archive digest are frozen
+- [x] Offline replay and exact rational representation are recorded as an ADR
+- [x] Sampling order and no-lookahead rule are explicit
+- [x] Pneumatic variables are prohibited from changing Stage A transitions
+- [x] Fixed diagnostic baselines and thresholds are declared before implementation
+- [x] Retain, narrow, revise, and reject outcomes are defined
